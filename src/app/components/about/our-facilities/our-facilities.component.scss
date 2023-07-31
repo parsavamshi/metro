@@ -1,0 +1,258 @@
+  .our-facilities{
+    background-image: url(../../../../assets/images/banners/vizagnew.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    h2{
+        color: black;
+        font-weight: normal;
+        font-size: 50px;
+        margin-top: -80px;
+        background-color: #fff;
+        text-align: center;
+        margin-top: 2rem;
+    }
+  }
+
+
+  .row > *{
+    margin: 10px 0;
+  }
+  span{
+    font-size: 18px;
+  }
+  img{
+    padding: 0 10px;
+  }
+
+  @media (max-width:500px){
+    .our-facilities{
+        height: 255px;
+        h2{
+            color: black;
+            font-weight: normal;
+            font-size: 26px;
+            margin-top: -80px;
+            background-color: #fff;
+            text-align: center;
+            margin-top: 2rem;
+        }
+    }
+    .row{
+        flex-direction: column;
+        width: 100% ;
+      margin: 0 !important;
+
+    }
+    .row > *{
+      width: 100%;
+      margin:2px  0 !important;
+      padding: 5px ;
+    }
+    h4{
+        margin: 1rem 0;
+        font-size: 14px;
+        text-align: center;
+        span{
+        font-size: 12px;
+        }
+    }
+    .our-facilities-content{
+      margin-top: 6rem;
+    }
+    .card-body{
+      padding: 5px;
+    }
+    span{
+      font-size: 14px !important;
+    }
+    .modal-dialog {
+      width: 95% !important;
+    }
+    .modal-title{
+      font-size: 14px;
+    }p{
+      font-size: 12px;
+    }
+  }
+
+  @media (min-width:501px) and (max-width:790px){
+    .our-facilities{
+        height: 40vh;
+        h2{
+            color: black;
+            font-weight: normal;
+            font-size: 32px;
+            margin-top: -80px;
+            background-color: #fff;
+            text-align: center;
+            margin-top: 2rem;
+        }
+    }
+    .row > *{
+      width: 100%;
+      margin:2px  0 !important;
+      padding: 5px ;
+    }
+    h4{
+        margin: 1rem 0;
+        font-size: 15px;
+        text-align: center;
+        span{
+        font-size: 13px;
+        }
+    }
+    .our-facilities-content{
+      margin-top: 6rem;
+    }
+    // .card-body{
+    //   padding: 5px;
+    // }
+    span{
+      font-size: 15px !important;
+    }
+    .modal-dialog {
+      width: 95% !important;
+    }
+    .modal-title{
+      font-size: 15px;
+    }p{
+      font-size: 13px;
+    }
+  }
+  @media  (min-width:791px) and (max-width:1024px){
+    .our-facilities{
+        height: 44vh;
+        h2{
+            color: black;
+            font-weight: normal;
+            font-size: 36px;
+            margin-top: -80px;
+            background-color: #fff;
+            text-align: center;
+            margin-top: 2rem;
+        }
+    }
+
+    h4{
+        margin: 1rem 0;
+        font-size: 16px;
+        text-align: center;
+        span{
+        font-size: 14px;
+        }
+    }
+    .our-facilities-content{
+      margin-top: 6rem;
+    }
+
+    span{
+      font-size: 16px !important;
+    }
+    .modal-dialog {
+      width: 95% !important;
+    }
+    .modal-title{
+      font-size: 16px;
+    }p{
+      font-size: 14px;
+    }
+  }
+
+  @media (min-width:1025px) and (max-width:1200px){
+
+
+    .our-facilities{
+      height: 44vh;
+      h2{
+          color: black;
+          font-weight: normal;
+          font-size: 36px;
+          margin-top: -80px;
+          background-color: #fff;
+          text-align: center;
+          margin-top: 2rem;
+      }
+  }
+  h4{
+        margin: 1rem 0;
+        font-size: 16px;
+        text-align: center;
+        span{
+        font-size: 14px;
+        }
+    }
+    .our-facilities-content{
+      margin-top: 6rem;
+    }
+
+    span{
+      font-size: 16px !important;
+    }
+    .modal-dialog {
+      width: 95% !important;
+    }
+    .modal-title{
+      font-size: 16px;
+    }p{
+      font-size: 14px;
+    }
+  }
+
+  @media (min-width:1201px) and (max-width:1440px){
+    .our-facilities{
+      height: 55vh;
+      h2{
+          color: black;
+          font-weight: normal;
+          font-size: 36px;
+          margin-top: -80px;
+          background-color: #fff;
+          text-align: center;
+          margin-top: 2rem;
+      }
+  }
+  h4{
+    margin: 1rem 0;
+    font-size: 16px;
+    text-align: center;
+    span{
+    font-size: 14px;
+    }
+}
+  .our-facilities-content{
+    margin-top: 6rem;
+  }
+
+  span{
+    font-size: 16px !important;
+  }
+  .modal-dialog {
+    width: 95% !important;
+  }
+  .modal-title{
+    font-size: 16px;
+  }p{
+    font-size: 14px;
+  }
+  }
+  @media (min-width:1441px){
+    .our-facilities{
+      height: 55vh;
+
+  }
+  .our-facilities-content{
+    margin-top: 6rem;
+  }
+  h4{
+    margin: 1rem 0;
+    font-size: 18px;
+    text-align: center;
+    span{
+    font-size: 14px;
+    }
+}
+
+  }
+  // @media (min-width:)

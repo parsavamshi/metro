@@ -1,0 +1,381 @@
+<a class="close-navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarSupportedContent"
+  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+  (click)="closeNavbar()"></a>
+
+<nav class="navbar navbar-expand-lg navbar-light flex-wrap align-items-center justify-content-center justify-content-md-between" [class.active]="classApplied" ngStickyNav
+  stickyClass="sticky-box-shadow" ngStickyNav [ngClass]="statusClass" >
+  <div class="container">
+    <div class="brandlogos">
+      <a rel="ugc" routerLink="home" class="logo1">
+        <img src="../../../assets/images/logo/metrochem-logo.svg" alt="metrochem-logo" class="brandlogo1" />
+      </a>
+    </div>
+    <button class="navbar-toggler" type="button" (click)="toggleClass()">
+      <span class="burger-menu">
+        <span class="top-bar"></span>
+        <span class="middle-bar"></span>
+        <span class="bottom-bar"></span>
+      </span>
+    </button>
+    <div class="collapse navbar-collapse col-12 col-md-auto mb-2 justify-content-center mb-md-0" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto align-items-center">
+        <li class="nav-item dropdown-link1 dropdown-nav">
+          <div class="dropdown">
+            <span class="nav-link dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+              aria-expanded="false" routerLink="our-story" routerLinkActive="active" (click)="scrollToTop()">
+              About
+            </span>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li>
+                <a class="dropdown-item" rel="ugc" routerLink="our-story" routerLinkActive="active"
+                  (click)="scrollToTop()"> Our Story</a>
+              </li>
+              <li>
+                <a class="dropdown-item link2" rel="ugc" routerLink="our-leadership" routerLinkActive="active"
+                  (click)="scrollToTop()">Our Leadership</a>
+              </li>
+              <li>
+                <a class="dropdown-item link2" rel="ugc" routerLink="our-philosophy" routerLinkActive="active"
+                  (click)="scrollToTop()">Our Philosophy</a>
+              </li>
+              <li>
+                <a class="dropdown-item link2" rel="ugc" routerLink="our-milestones" routerLinkActive="active"
+                  (click)="scrollToTop()">Our Milestones</a>
+              </li>
+              <li>
+                <a class="dropdown-item link2" rel="ugc" routerLink="accreditations" routerLinkActive="active"
+                  (click)="scrollToTop()">Accreditations</a>
+              </li>
+              <li>
+                <a class="dropdown-item link2" rel="ugc" routerLink="global-presence" routerLinkActive="active"
+                  (click)="scrollToTop()">Global Presence</a>
+              </li>
+              <li>
+                <a class="dropdown-item link2" rel="ugc" routerLink="our-facilities" routerLinkActive="active"
+                  (click)="scrollToTop()">Our Facilities</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item dropdown-link2 dropdown-nav">
+          <div class="dropdown">
+            <span class="nav-link dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+              aria-expanded="false" routerLink="our-R&D" routerLinkActive="active" (click)="scrollToTop()">
+              R&D
+            </span>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li>
+                <a class="dropdown-item" rel="ugc" routerLink="our-R&D" routerLinkActive="active"
+                  (click)="scrollToTop()">Our R&D</a>
+              </li>
+              <li>
+                <a class="dropdown-item link2" rel="ugc" routerLink="our-expertise" routerLinkActive="active"
+                  (click)="scrollToTop()">Our Expertise</a>
+              </li>
+              <li>
+                <a class="dropdown-item link2" rel="ugc" routerLink="our-infrastructure" routerLinkActive="active"
+                  (click)="scrollToTop()">Our Infrastructure</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item dropdown-link2 dropdown-nav">
+          <div class="dropdown">
+            <span class="nav-link dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+              aria-expanded="false" routerLink="apis-generic-products-portfolio" routerLinkActive="active"
+              (click)="scrollToTop()">
+              Products
+            </span>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li>
+                <a class="dropdown-item" rel="ugc" routerLink="apis-generic-products-portfolio"
+                  routerLinkActive="active" (click)="scrollToTop()">APIs-Generic Products Portfolio</a>
+              </li>
+              <li>
+                <a class="dropdown-item" rel="ugc" routerLink="apis-under-validation" routerLinkActive="active"
+                  (click)="scrollToTop()">  APIs-Under Validation / Development Pipeline</a>
+              </li>
+              <!-- <li>
+                <a class="dropdown-item" rel="ugc" routerLink="development-pipeline" routerLinkActive="active"
+                  (click)="scrollToTop()">Development Pipeline</a>
+              </li> -->
+              <li>
+                <a class="dropdown-item" rel="ugc" routerLink="pellets" routerLinkActive="active"
+                  (click)="scrollToTop()">Pellets</a>
+              </li>
+              <li>
+                <a class="dropdown-item link2" rel="ugc" routerLink="intermediates" routerLinkActive="active"
+                  (click)="scrollToTop()">Intermediates</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item dropdown-link2 dropdown-nav">
+          <!-- <span routerLink="/media" routerLinkActive="active" class="nav-link" (click)="scrollToTop()">Media</span> -->
+          <div class="dropdown">
+            <span class="nav-link dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+              aria-expanded="false" routerLink="/sustainability" routerLinkActive="active" (click)="scrollToTop()">
+              Sustainability
+            </span>
+            <!-- <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li>
+                <a class="dropdown-item link2" rel="ugc" routerLink="esg" routerLinkActive="active"
+                  (click)="scrollToTop()">ESG</a>
+              </li>
+              <li>
+                <a class="dropdown-item link2" rel="ugc"  routerLink="/core-values" routerLinkActive="active"
+                  (click)="scrollToTop()">Core Values</a>
+              </li>
+
+              <li>
+                <a class="dropdown-item" rel="ugc" routerLink="media" routerLinkActive="active"
+                  (click)="scrollToTop()">Media</a>
+              </li>
+
+            </ul> -->
+          </div>
+        </li>
+        <li class="nav-item">
+          <span routerLink="/careers" routerLinkActive="active" class="nav-link" (click)="scrollToTop()">Careers</span>
+        </li>
+
+        <!-- <li class="nav-item">
+          <span routerLink="/blog" routerLinkActive="active" class="nav-link" (click)="scrollToTop()">Blog</span>
+        </li> -->
+        <li class="nav-item dropdown-link2 dropdown-nav">
+          <!-- <span routerLink="/media" routerLinkActive="active" class="nav-link" (click)="scrollToTop()">Media</span> -->
+          <div class="dropdown">
+            <span class="nav-link dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+              aria-expanded="false" routerLink="/blog" routerLinkActive="active" (click)="scrollToTop()">
+              More+
+            </span>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <!-- <li>
+                <a  class="dropdown-item" routerLink="/blog" routerLinkActive="active" class="nav-link" (click)="scrollToTop()">Blog</a>
+              </li> -->
+              <li>
+                <a class="dropdown-item link2" rel="ugc"  routerLink="/blog" routerLinkActive="active"
+                  (click)="scrollToTop()">Blog</a>
+              </li>
+              <li>
+                <a class="dropdown-item link2" rel="ugc"  routerLink="/core-values" routerLinkActive="active"
+                  (click)="scrollToTop()">Core Values</a>
+              </li>
+              <li>
+                <a class="dropdown-item" rel="ugc" routerLink="/media" routerLinkActive="active"
+                  (click)="scrollToTop()">Media</a>
+              </li>
+
+            </ul>
+          </div>
+        </li>
+        <!-- <li class="nav-item">
+          <span routerLink="/contact-us" routerLinkActive="active" class="nav-link" (click)="scrollToTop()">
+            Contact Us</span>
+        </li> -->
+        <li class="nav-item">
+          <span routerLink="/contact-us" routerLinkActive="active" class="nav-link" (click)="scrollToTop()">
+            Contact Us</span>
+            <!-- <a href="../../../contact-us.html" target="_blank"> Contact Us</a> -->
+        </li>
+      </ul>
+
+      <ul class="navbar-nav ml-auto for-responsive">
+        <!-- <li class="nav-item">
+          <span routerLink="/home" routerLinkActive="active" class="nav-link" (click)="scrollToTop()"
+            (click)="closeNavbar()">Home</span>
+        </li>
+        <li class="nav-item">
+          <span routerLink="/about-us" routerLinkActive="active" class="nav-link" (click)="scrollToTop()"
+            (click)="closeNavbar()">About</span>
+        </li>
+        <li class="nav-item">
+          <span routerLink="/products" routerLinkActive="active" class="nav-link" (click)="scrollToTop()"
+            (click)="closeNavbar()">
+            Products</span>
+        </li>
+        <li class="nav-item">
+          <span routerLink="/carrers" routerLinkActive="active" class="nav-link" (click)="scrollToTop()"
+            (click)="closeNavbar()">Pricing</span>
+        </li>
+        <li class="nav-item">
+          <span routerLink="/contact-us" routerLinkActive="active" class="nav-link" (click)="scrollToTop()"
+            (click)="closeNavbar()">
+            Contact Us</span>
+        </li> -->
+
+        <!-- <li class="nav-item">
+          <span routerLink="/home" routerLinkActive="active" class="nav-link" (click)="scrollToTop()"
+            (click)="closeNavbar()">Home</span>
+        </li> -->
+        <li class="nav-item dropdown-link1 dropdown-nav">
+        <div class="dropdown">
+          <span class="nav-link dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+            aria-expanded="false" routerLink="our-story" routerLinkActive="active"   (click)="closeNavbar()"   (click)="closeNavbar()">
+            About
+          </span>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li>
+              <a class="dropdown-item" rel="ugc" routerLink="our-story" routerLinkActive="active"
+                  (click)="closeNavbar()"  > Our Story</a>
+            </li>
+            <li>
+              <a class="dropdown-item link2" rel="ugc" routerLink="our-leadership" routerLinkActive="active"
+                  (click)="closeNavbar()"   >Our Leadership</a>
+            </li>
+            <li>
+              <a class="dropdown-item link2" rel="ugc" routerLink="our-philosophy" routerLinkActive="active"
+                  (click)="closeNavbar()"   >Our Philosophy</a>
+            </li>
+            <li>
+              <a class="dropdown-item link2" rel="ugc" routerLink="our-milestones" routerLinkActive="active"
+                  (click)="closeNavbar()"   >Our Milestones</a>
+            </li>
+            <li>
+              <a class="dropdown-item link2" rel="ugc" routerLink="accreditations" routerLinkActive="active"
+                  (click)="closeNavbar()"   >Accreditations</a>
+            </li>
+            <li>
+              <a class="dropdown-item link2" rel="ugc" routerLink="global-presence" routerLinkActive="active"
+                  (click)="closeNavbar()"   >Global Presence</a>
+            </li>
+            <li>
+              <a class="dropdown-item link2" rel="ugc" routerLink="our-facilities" routerLinkActive="active"
+                  (click)="closeNavbar()"   >Our Facilities</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item dropdown-link2 dropdown-nav">
+        <div class="dropdown">
+          <span class="nav-link dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+            aria-expanded="false" routerLink="our-R&D" routerLinkActive="active"   (click)="closeNavbar()">
+            R&D
+          </span>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li>
+              <a class="dropdown-item" rel="ugc" routerLink="our-R&D" routerLinkActive="active"
+                  (click)="closeNavbar()">Our R&D</a>
+            </li>
+            <li>
+              <a class="dropdown-item link2" rel="ugc" routerLink="our-expertise" routerLinkActive="active"
+                  (click)="closeNavbar()">Our Expertise</a>
+            </li>
+            <li>
+              <a class="dropdown-item link2" rel="ugc" routerLink="our-infrastructure" routerLinkActive="active"
+                  (click)="closeNavbar()">Our Infrastructure</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item dropdown-link2 dropdown-nav">
+        <div class="dropdown">
+          <span class="nav-link dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+            aria-expanded="false" routerLink="apis-generic-products-portfolio" routerLinkActive="active"
+              (click)="closeNavbar()">
+            Products
+          </span>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li>
+              <a class="dropdown-item" rel="ugc" routerLink="apis-generic-products-portfolio"
+                routerLinkActive="active"   (click)="closeNavbar()">APIs-Generic Products Portfolio</a>
+            </li>
+            <li>
+              <a class="dropdown-item" rel="ugc" routerLink="apis-under-validation" routerLinkActive="active"
+                  (click)="closeNavbar()"> APIs-Under Validation / Development Pipeline</a>
+            </li>
+            <!-- <li>
+              <a class="dropdown-item" rel="ugc" routerLink="development-pipeline" routerLinkActive="active"
+                  (click)="closeNavbar()">Development Pipeline</a>
+            </li> -->
+            <li>
+              <a class="dropdown-item" rel="ugc" routerLink="pellets" routerLinkActive="active"
+                  (click)="closeNavbar()">Pellets</a>
+            </li>
+            <li>
+              <a class="dropdown-item link2" rel="ugc" routerLink="intermediates" routerLinkActive="active"
+                (click)="scrollToTop()"  (click)="closeNavbar()">Intermediates</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item dropdown-link2 dropdown-nav">
+        <!-- <span routerLink="/media" routerLinkActive="active" class="nav-link" (click)="scrollToTop()">Media</span> -->
+        <div class="dropdown">
+          <span class="nav-link dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+            aria-expanded="false" routerLink="/sustainability" routerLinkActive="active" (click)="scrollToTop()" (click)="closeNavbar()">
+            Sustainability
+          </span>
+          <!-- <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li>
+              <a class="dropdown-item link2" rel="ugc" routerLink="esg" routerLinkActive="active"
+                (click)="scrollToTop()" (click)="closeNavbar()">ESG</a>
+            </li>
+          </ul> -->
+        </div>
+      </li>
+      <li class="nav-item">
+        <span routerLink="/careers" routerLinkActive="active" class="nav-link" (click)="scrollToTop()" (click)="closeNavbar()">Careers</span>
+      </li>
+      <!-- <li class="nav-item">
+        <span routerLink="/media" routerLinkActive="active" class="nav-link" (click)="scrollToTop()">Media</span>
+      </li> -->
+      <!-- <li class="nav-item">
+        <span routerLink="/blog" routerLinkActive="active" class="nav-link" (click)="scrollToTop()" (click)="closeNavbar()">Blog</span>
+      </li> -->
+      <li class="nav-item dropdown-link2 dropdown-nav">
+        <!-- <span routerLink="/media" routerLinkActive="active" class="nav-link" (click)="scrollToTop()">Media</span> -->
+        <div class="dropdown">
+          <span class="nav-link dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+            aria-expanded="false" routerLink="/blog" routerLinkActive="active" (click)="scrollToTop()" (click)="closeNavbar()">
+            More+
+          </span>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li>
+              <a class="dropdown-item link2" rel="ugc" routerLink="/blog" routerLinkActive="active"
+                (click)="scrollToTop()" (click)="closeNavbar()">Blog</a>
+            </li>
+            <li>
+              <a class="dropdown-item link2" rel="ugc" routerLink="/core-values" routerLinkActive="active"
+                (click)="scrollToTop()" (click)="closeNavbar()">Core Values</a>
+            </li>
+            <li>
+              <a class="dropdown-item" rel="ugc" routerLink="/media" routerLinkActive="active"
+                (click)="scrollToTop()" (click)="closeNavbar()">Media</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item">
+        <span routerLink="/contact-us" routerLinkActive="active" class="nav-link" (click)="scrollToTop()" (click)="closeNavbar()">
+          Contact Us</span>
+      </li>
+      <!-- <li class="nav-item">    <span class="nav-link " ></span></li> -->
+
+      </ul>
+      <!-- <div class="col-md-2 text-end translate">
+        <div id="google_translate_element"></div>
+      </div> -->
+    </div>
+  </div>
+</nav>
+
+
+<!-- <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+  <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+    <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+  </a>
+
+  <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+    <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
+    <li><a href="#" class="nav-link px-2 link-dark">Features</a></li>
+    <li><a href="#" class="nav-link px-2 link-dark">Pricing</a></li>
+    <li><a href="#" class="nav-link px-2 link-dark">FAQs</a></li>
+    <li><a href="#" class="nav-link px-2 link-dark">About</a></li>
+  </ul>
+
+  <div class="col-md-3 text-end">
+    <button type="button" class="btn btn-outline-primary me-2">Login</button>
+    <button type="button" class="btn btn-primary">Sign-up</button>
+  </div>
+</header> -->

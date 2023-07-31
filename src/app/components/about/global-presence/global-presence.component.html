@@ -1,0 +1,50 @@
+
+<div class="global-presence">
+  <div class="d-table">
+      <div class="d-table-cell">
+          <div class="main-banner item-bg-one">
+              <div class="d-table">
+                  <div class="d-table-cell">
+                      <div class="container">
+                              <div class="main-banner-text">
+                                  <!-- <h2 style="">This site is under process</h2> -->
+
+                              </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="">
+  <app-about-nav></app-about-nav>
+<div class="global-presence-content">
+  <div class="container">
+    <div class="my-5">
+      <h3 class="text-center m-5 mx-0">Metrochem's Global Presence</h3>
+      <table class="table ">
+        <table class="table table-striped text-center table-bordered">
+          <thead>
+            <tr>
+              <th scope="col">COUNTRY </th>
+              <th scope="col">COUNTRY</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor = 'let Data of tableData'>
+              <td>{{Data.countryName}}</td>
+              <td colspan="2">{{Data.countryName2}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </table>
+      <div>
+        <p>Our products will not be supplied to countries in which that product could be in conflict with existing patents. Further, any products under patent will be offered for R&D purpose only. However the final responsibility lies exclusively with the buyer.</p>
+        <a class="nav-link" routerLink="/apis-generic-products-portfolio">Please check our products list. </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>

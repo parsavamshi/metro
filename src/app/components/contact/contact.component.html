@@ -1,0 +1,287 @@
+<div class="contact">
+  <div class="d-table">
+    <div class="d-table-cell">
+      <div class="main-banner item-bg-one">
+        <div class="d-table">
+          <div class="d-table-cell">
+            <div class="container">
+              <div class="main-banner-text">
+                <h3>Contact Us</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div class="row align-items-center enquiry-form ">
+        <div class="enquiry my-4 col-xl-5 col-md-12 pb-5">
+          <h5 class="text-center mb-5 form-titel">Enquiry</h5>
+          <form #contactForm="ngForm" (ngSubmit)="submit(contactForm.value)" #form="ngForm" action="/el/wutiwo"
+            method="POST">
+            <div class="row">
+              <div class="col-lg-6 col-md-6">
+                <div class="row">
+                  <div class="col-lg-6 col-md-6">
+                    <div class="form-group mb-3">
+                      <select matNativeControl id="mySelectId" class="form-select">
+                        <option value="" disabled selected>Division</option>
+                        <option value="volvo">API</option>
+                        <option value="saab">Pellets</option>
+                        <option value="mercedes">Intermediates</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6">
+                    <div class="form-group mb-3">
+                      <select matNativeControl id="mySelectId" class="form-select">
+                        <option value="" disabled selected>Titel</option>
+                        <option value="volvo">Mr.</option>
+                        <option value="saab">Ms.</option>
+                      </select>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6">
+                <div class="form-group mb-3">
+                  <input required minlength="3" maxlength="50" ngModel name="name" type="text" #name="ngModel"
+                    class="form-control" id="name" placeholder="Full Name">
+                  <span class="alert alert-danger" *ngIf="name.touched && !name.valid">
+                    Name is required.
+                  </span>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6">
+                <div class="form-group mb-3">
+                  <input required minlength="3" maxlength="50" ngModel name="company" type="text" #company="ngModel"
+                    class="form-control" id="company" placeholder="Company Name">
+                  <div class="alert alert-danger" *ngIf="company.touched && !company.valid">
+                    Company is required.
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6">
+                <div class="form-group mb-3">
+                  <input required minlength="3" maxlength="50" ngModel name="designation" type="text"
+                    #designation="ngModel" class="form-control" id="designation" placeholder="Designation">
+                  <div class="alert alert-danger" *ngIf="designation.touched && !designation.valid">
+                    Designation is required.
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6">
+                <div class="form-group mb-3">
+                  <input required minlength="3" maxlength="50" ngModel name="street1" type="text" #street1="ngModel"
+                    class="form-control" id="street1" placeholder="Street  Address 1">
+                  <!-- <div class="alert alert-danger" *ngIf="name.touched && !name.valid">
+                      Name is required.
+                    </div> -->
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6">
+                <div class="form-group mb-3">
+                  <input required minlength="3" maxlength="50" ngModel name="street2" type="text" #street2="ngModel"
+                    class="form-control" id="street2" placeholder="Street2 Address 2">
+                  <!-- <div class="alert alert-danger" *ngIf="name.touched && !name.valid">
+                      Name is required.
+                    </div> -->
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6">
+                <div class="form-group mb-3">
+                  <input required minlength="3" maxlength="50" ngModel name="city" type="text" #city="ngModel"
+                    class="form-control" id="city" placeholder="City">
+                  <div class="alert alert-danger" *ngIf="city.touched && !city.valid">
+                    City is required.
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6">
+                <div class="form-group mb-3">
+                  <input required minlength="3" maxlength="50" ngModel name="state" type="text" #state="ngModel"
+                    class="form-control" id="state" placeholder="State">
+                  <div class="alert alert-danger" *ngIf="state.touched && !state.valid">
+                    State is required.
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6">
+                <div class="form-group mb-3">
+                  <input required minlength="3" maxlength="50" ngModel name="zipCode" type="text" #zipCode="ngModel"
+                    class="form-control" id="zipCode" placeholder="Zip Code">
+                  <div class="alert alert-danger" *ngIf="zipCode.touched && !zipCode.valid">
+                    Zip Code is required.
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6">
+                <div class="form-group mb-3">
+                  <select selectedObject="ngModel" class="form-select">
+                    <option value="" disabled selected>Select Your Country</option>
+                    <option *ngFor="let lang of languages" [ngValue]="lang">
+                      {{lang.name}}
+                    </option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6">
+                <div class="form-group mb-3">
+                  <input required ngModel name="number" type="text" #number="ngModel" class="form-control" id="number"
+                    placeholder="Phone Number">
+                  <div class="alert alert-danger" *ngIf="number.touched && !number.valid">Phone number is required.
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6">
+                <div class="form-group mb-3">
+                  <input required ngModel name="email" type="text" #email="ngModel" class="form-control" id="email"
+                    placeholder="Email">
+                  <div class="alert alert-danger" *ngIf="email.touched && !email.valid">Email Address is required.</div>
+                </div>
+              </div>
+              <div class="col-lg-12 col-md-12">
+                <div class="form-group mb-3">
+                  <textarea required ngModel #message="ngModel" name="message" id="message" cols="30" rows="4"
+                    class="form-control" placeholder="Comment Or Message"></textarea>
+                  <div class="alert alert-danger" *ngIf="message.touched && !name.valid">Message is required.</div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="terms" ngModel name="terms" #terms="ngModel"
+                    required>
+                  <label class="form-check-label" for="terms">
+                    I Accept Terms & Conditions of the website.
+                  </label>
+                  <div *ngIf="terms?.touched && terms?.invalid" class="invalid-feedback">
+                    You must agree before submitting.
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12 col-md-12">
+                <button type="submit" class="btn btn-primary" [class.disabled]="!contactForm.valid">Send
+                  Message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-xl-7 col-md-12 col-sm-12">
+          <div class=" mt-5">
+            <div class="mb-4  ">
+              <h2>REGISTERED OFFICE:</h2>
+              <h5 class="titel">Metrochem API Private Limited</h5>
+              <p class="mb-1">Flat No. 302, Bhanu Enclave, Sunder Nagar
+                Erragadda, Hyderabad – 500038 Telangana State, India.</p>
+              <p class="mb-1">Ph: <a href="tel:+91402370 0421"> +91 - 40 -2370 0421</a> / <a href="tel:2381 3969">2381
+                  3969</a> / <a href="tel:2381 2317">2381 2317</a></p>
+              <p class="mb-1">Fax: <a href="fax:+91402370 5088">+91 -40 -2370 5088</a></p>
+              <p class="mb-1">Email: <a href="mailto:contact@metroapi.com">contact@metroapi.com</a></p>
+            </div>
+            <div class="mb-4 pb-3 C-O-office">
+              <h2>CORPORATE OFFICE:</h2>
+              <p class="mb-1">The Watermark, 3rd floor, Plot No 11, Survey No. 9, Whitefields, Kondapur,
+                Hitech City, Hyderabad - 500084 Telangana State, India.</p>
+              <p class="mb-1">Ph: <a href="+914069069999">+91 - 40 - 69069999</a></p>
+              <p class="mb-1">Email: <a href="mailto:contact@metroapi.com">contact@metroapi.com</a></p>
+            </div>
+            <div class="mb-4 google-maps" >
+              <h2>ROUTE MAP:</h2>
+              <div class="mb-3">
+                <a href="https://www.google.co.in/maps/dir/Rajiv+Gandhi+International+Airport,+Shamshabad,+Hyderabad,+Andhra+Pradesh+500409/Metrochem+Api+Private+Limited,+No+302,+Bhanu+Enclave,+Sunder+Nagar,+Erragadda,+Erragadda,+Hyderabad,+Andhra+Pradesh+500038/@17.3475808,78.2632584,11z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x3bcbbb7fb1d91b45:0x532029ec33eaa851!2m2!1d78.429385!2d17.240263!1m5!1m1!1s0x3bcb911d00000001:0x1555aab4d883f58a!2m2!1d78.426852!2d17.45659!3e0?hl=en"
+                  target="_blank">From Rajiv Gandhi International Airport to Metrochem API Office</a>
+              </div>
+              <div class="mb-3">
+                <a href="https://www.google.co.in/maps/dir/Hyderabad+Railway+Station,+Red+Hills,+Lakdikapul,+Hyderabad,+Telangana+500004/Metrochem+Api+Private+Limited,+No+302,+Bhanu+Enclave,+Sunder+Nagar,+Erragadda,+Erragadda,+Hyderabad,+Andhra+Pradesh+500038/@17.4226461,78.3503846,12z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x3bcb9764f07ab5b1:0x4a5c5dd095baacc0!2m2!1d78.4675162!2d17.3925622!1m5!1m1!1s0x3bcb911d00000001:0x1555aab4d883f58a!2m2!1d78.3709722!2d17.4544241!3e0?hl=en"
+                  target="_blank">From Hyderabad Railway Station to Metrochem API Office</a>
+              </div>
+              <div class="mb-3">
+                <a href="https://www.google.co.in/maps/dir/Secunderabad,+Railway+Officer+Colony,+Botiguda,+Boiguda,+Hyderabad,+AP+500025/Metrochem+Api+Private+Limited,+No+302,+Bhanu+Enclave,+Sunder+Nagar,+Erragadda,+Erragadda,+Hyderabad,+Andhra+Pradesh+500038/@17.4323049,78.4297834,13z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x3bcb9a213de9c7b7:0x957c784f25ea95aa!2m2!1d78.502228!2d17.433258!1m5!1m1!1s0x3bcb911d00000001:0x1555aab4d883f58a!2m2!1d78.426852!2d17.45659!3e0?hl=en"
+                  target="_blank">From Secunderabad Railway Station to Metrochem API Office</a>
+              </div>
+              <div class="mb-3">
+                <a href="https://www.google.co.in/maps/dir/Mahatma+Gandhi+Bus+Station,+Gowliguda+North,+Gowliguda,+Hyderabad,+AP+500095/Metrochem+Api+Private+Limited,+No+302,+Bhanu+Enclave,+Sunder+Nagar,+Erragadda,+Erragadda,+Hyderabad,+Andhra+Pradesh+500038/@17.4166467,78.3498234,12z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x3bcb982da0bbdbdd:0xde9ce43251f1fc5e!2m2!1d78.4845176!2d17.3780864!1m5!1m1!1s0x3bcb911d00000001:0x1555aab4d883f58a!2m2!1d78.3709722!2d17.4544241!3e0?hl=en"
+                  target="_blank">From Mahatma Gandhi Bus Station to Metrochem API Office</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 my-5">
+        <div class="row ">
+          <div class="col-lg-6 col-md-6 my-2" *ngFor="let x of Units">
+           <h5 class="units-titel">{{x.titel}}</h5>
+           <span class="units"><b>{{x.companyName}}</b></span>
+           <p>{{x.address}}</p>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<!-- <form
+action="https://formspree.io/f/myyvoypy"
+method="POST"
+>
+<label>
+  Your email:
+  <input type="email" name="email">
+</label>
+<label>
+  Your message:
+  <textarea name="message"></textarea>
+</label>
+<button type="submit">Send</button>
+</form>
+
+
+
+
+<div class="col-lg-6 col-md-6">
+                        <div class="form-group mb-3">
+                            <label>Name</label>
+                            <input required minlength="3" maxlength="50" ngModel name="name" type="text" #name="ngModel" class="form-control" id="name">
+                            <div class="alert alert-danger" *ngIf="name.touched && !name.valid">
+                              Name is required.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="form-group mb-3">
+                            <label>Email</label>
+                            <input required ngModel name="email" type="text" #email="ngModel" class="form-control" id="email">
+                            <div class="alert alert-danger" *ngIf="email.touched && !email.valid">Email Address is required.</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="form-group mb-3">
+                            <label>Subject</label>
+                            <input required ngModel name="subject" type="text" #subject="ngModel" class="form-control" id="subject">
+                            <div class="alert alert-danger" *ngIf="subject.touched && !subject.valid">Phone subject is required.</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="form-group mb-3">
+                            <label>Phone Number</label>
+                            <input required ngModel name="number" type="text" #number="ngModel" class="form-control" id="number">
+                            <div class="alert alert-danger" *ngIf="number.touched && !number.valid">Phone number is required.</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12">
+                        <div class="form-group mb-3">
+                            <label>Message</label>
+                            <textarea required ngModel #message="ngModel" name="message" id="message" cols="30" rows="4" class="form-control"></textarea>
+                            <div class="alert alert-danger" *ngIf="message.touched && !name.valid">Message is required.</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12">
+                        <button type="submit" class="btn btn-primary" [class.disabled]="!contactForm.valid">Send Message</button>
+                    </div>
+
+-->

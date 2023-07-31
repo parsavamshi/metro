@@ -1,0 +1,185 @@
+.products{
+  margin-top: 10rem;
+}
+ul{
+  margin: 15px 0 15px;
+  line-height: 20px;
+}
+ul , li{
+  list-style: disc;
+  border: 0;
+  outline: 0;
+  font-size: 13.2pt;
+  /* font: inherit; */
+  vertical-align: baseline;
+  font-family: "Montserrat";
+  /* font-style: inherit; */
+  /* font-weight: inherit; */
+  line-height: 28px;
+  span{
+    letter-spacing: -2px;
+    font-size: 13.2pt !important;
+    font-weight: normal !important;
+  }
+}
+h5, h3{
+  font-weight: 600;
+  font-size: 20px;
+}
+p{
+  font-size: 13.2pt;
+}
+span{
+  font-family: arial, sans-serif !important;
+  font-size: 13px !important;
+  line-height: 34px;
+  font-weight: 600;
+
+}
+.unstyle{
+  padding: 0 !important;
+  li{
+  list-style: none !important;
+
+  }
+}
+
+@media (max-width:500px){
+  h3{
+    font-size: 12pt;
+  }
+  h5{
+    font-size: 13pt;
+  }
+  ul{
+    li{
+      font-size: 9pt;
+      span{
+        font-size: 9pt !important;
+      }
+    }
+  }
+  p{
+    font-size: 9pt;
+  }
+  span{
+    font-size: 7.5pt !important;
+    line-height: 10px !important;
+  }
+}
+@media (min-width:501px) and (max-width:768px){
+  h3{
+    font-size: 13pt;
+  }
+  h5{
+    font-size: 13.8pt;
+  }
+  ul{
+    li{
+      font-size: 9.8pt;
+      span{
+        font-size: 9.8pt !important;
+      }
+    }
+  }
+  p{
+    font-size: 9.8pt;
+  }
+  span{
+    font-size: 8pt !important;
+    line-height: 10px !important;
+  }
+}
+@media (min-width:769px) and (max-width:990px){
+  h3{
+    font-size: 13pt;
+  }
+  h5{
+    font-size: 13.8pt;
+  }
+  ul{
+    li{
+      font-size: 9.8pt;
+      span{
+        font-size: 9.8pt !important;
+      }
+    }
+  }
+  p{
+    font-size: 9.8pt !important;
+  }
+  span{
+    font-size: 8pt !important;
+    line-height: 10px !important;
+  }
+}
+@media (min-width:991px) and (max-width:1200px){
+  h3{
+    font-size: 14pt;
+  }
+  h5{
+    font-size: 14.8pt;
+  }
+  ul{
+    li{
+      font-size: 10pt;
+      span{
+        font-size: 10pt !important;
+      }
+    }
+  }
+  p{
+    font-size: 10pt;
+  }
+  span{
+    font-size: 8pt !important;
+    line-height: 10px !important;
+  }
+}
+@media (min-width:1201px) and (max-width:1440px){
+  h3{
+    font-size: 15pt;
+  }
+  h5{
+    font-size: 16pt;
+  }
+  ul{
+    li{
+      font-size: 11pt;
+      span{
+        font-size: 11pt !important;
+      }
+    }
+  }
+  p{
+    font-size: 11pt;
+  }
+  span{
+    font-size: 9pt !important;
+    line-height: 10px !important;
+  }
+}
+@media (min-width:1441px){
+  h3{
+    font-size: 15pt;
+  }
+  h5{
+    font-size: 16pt;
+  }
+  ul{
+    li{
+      font-size: 12pt;
+    line-height: 26px;
+      span{
+        font-size: 12pt !important;
+      }
+    }
+  }
+  p{
+    font-size: 12pt;
+  }
+  span{
+    font-size: 9pt !important;
+    line-height: 10px !important;
+  }
+}

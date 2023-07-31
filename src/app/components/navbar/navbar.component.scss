@@ -1,0 +1,250 @@
+.brandlogo1{
+  width: 260px !important;
+  height: 50px;
+  padding: 2px 0;
+}
+.logo2{
+  display: none;
+}
+.navbar{
+  padding: 0px !important;
+  background-color: #fff !important;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+ul img{
+  width: 50px;
+  height: 24px;
+  vertical-align: middle;
+}
+.li{
+  border-radius: 3px;
+  border: 1px solid #23BBFC;
+  padding-right: 20px;
+  display: flex;
+  position: relative;
+  right: 60px;
+  padding-right: 25px;
+  padding-top: 4px;
+  position: relative;
+  right: 10px;
+}
+.li img{
+  padding-left: 4px;
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+  position: absolute;
+  top: 5vh;
+  left: -5vh;
+}
+@media all and (min-width: 992px) {
+.navbar .nav-item .dropdown-menu{ display: none; }
+// .navbar .nav-item:hover .nav-link{   }
+.navbar .nav-item:hover .dropdown-menu{ display: block; }
+.navbar .nav-item .dropdown-menu{ margin-top:0; }
+  .dropdown-2{
+      left: 0;
+      right: 0;
+  }
+}
+
+.dropdown-toggle::after{
+  display: none;
+}
+.dropdown-menu {
+  text-align: start;
+
+}
+.dropdown-menu li{
+  padding: 5px 15px;
+  line-height: none;
+}
+.dropdown-menu li a{
+ font-size: 13px;
+ color: #0e2b5c;
+ text-decoration: none;
+ display: block;
+}
+.nav-item{
+  position: relative;
+  margin-right: 6px !important;
+  padding: 28px  18px !important;
+}
+.nav__item.has-dropdown > .dropdown-menu{
+  position: absolute;
+  left: 0;
+  right: auto;
+
+}
+.dropdown-item{
+  &.active,
+  &:hover{
+      background-color: #fff !important;
+      color: #EB7A24 !important;
+  }
+}
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 1199px){
+  .brandlogo1{
+      width: 250px !important;
+      max-width: 80%;
+      height: 7vh;
+  }
+  .navbar-light .navbar-nav .nav-item{
+      padding:15px 10px !important
+  }
+}
+@media (min-width: 1024) and (max-width:1100){
+  .brandlogo1{
+      width: 250px !important;
+      max-width: 50%;
+      height: 70px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar{
+      background-color: #f8f9fa!important;
+  }
+
+  .logo2{
+      display: block;
+      width: 170px;
+      padding: 10px;
+  }
+
+}
+
+@media (max-width: 1024px){
+  .navbar-expand-lg{
+      padding: 0px !important;
+      background-color: #fff !important;
+      z-index: 1000;
+
+  }
+  .navbar-light .navbar-nav .nav-item{
+      padding-right: 10px !important;
+      padding-left: 12px !important;
+      text-align: center;
+  }
+  .navbar-.navbar-light .navbar-nav .nav-item  {
+      padding-right: 20px !important;
+}
+.navbar-light .navbar-nav .nav-item .nav-link {
+    font-size: 13px !important;
+    display: block;
+}
+.li{
+  position: relative;
+  right: 10px;
+
+}
+
+}
+@media (max-width:768px){
+  .li{
+      display: none;
+  }
+
+}
+@media (max-width:990px){
+  .translate{
+    width: 100% !important;
+    text-align: center !important;
+    margin-bottom: 1rem;
+  }
+}
+.imgStyle{
+  border-radius: 3px;
+  display: flex;
+  right: 60px;
+  padding-right: 25px;
+  padding-top: 4px;
+  position: relative;
+  right: 10px;
+  border-radius: 25%;
+  width: 3%;
+}
+
+
+
+
+
+
+
+
+
+.dropdown-link1 {
+  position: relative;
+
+  &:hover>.dropdown-1 {
+    display: block;
+
+  }
+}
+.dropdown-link2{
+  position: relative;
+
+  &:hover>.dropdown-2 {
+    display: block;
+
+  }
+}
+.dropdown-1 {
+  position: absolute;
+  // width: 1200px !important;
+  background-color: #f3f3f3;
+  top: 96%;
+  left: -8vh;
+  right: 0;
+  display: none;
+  border-radius: 5px;
+  padding:10px 20px;
+  z-index: 11 !important;
+  ul {
+      padding-left: 0;
+      .nav-link {
+        font-size: 14px;
+        margin: 10px 0;
+        text-align: start;
+        padding-left: 0;
+        &:hover {
+          color: none !important;
+        }
+      }
+    }
+}
+
+.dropdown-2 {
+  position: absolute;
+  // width: 1200px !important;
+  background-color: #f3f3f3;
+  top: 96%;
+  left: -12vh;
+  right: 0;
+  display: none;
+  border-radius: 5px;
+  padding:10px 20px;
+  z-index: 11 !important;
+  ul {
+      padding-left: 0;
+      .nav-link {
+        font-size: 14px;
+        margin: 10px 0;
+        text-align: start;
+        padding-left: 0;
+        &:hover {
+          color: none !important;
+        }
+      }
+    }
+}
+
+
+@media (min-width:991px) and (max-width:1200px){
+  .navbar-light .navbar-nav .nav-item .nav-link{
+    font-size: 12px;
+  }
+}

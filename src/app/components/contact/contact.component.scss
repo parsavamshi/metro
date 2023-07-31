@@ -1,0 +1,200 @@
+.contact {
+  background-image: url(../../../assets/images/banners/contact.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 460px;
+  h2 {
+    color: black;
+    font-weight: normal;
+    font-size: 50px;
+    margin-top: -80px;
+    background-color: #fff;
+    text-align: center;
+    margin-top: 2rem;
+  }
+}
+h1 {
+  text-align: start;
+  margin: 0rem 0 3rem;
+  color: #eb7a24;
+  &::after {
+    content: "";
+    width: 36%;
+    height: 2px;
+    background-color: #eb7a24;
+    margin-top: 10px;
+    display: block;
+  }
+}
+img{
+  width:300px;
+  // height: 100%;
+}
+// .row > *{
+//   padding: 0;
+// }
+
+
+p {
+  font-family: Lato;
+}
+
+input.ng-invalid.ng-touched {
+  border: 1px solid #842029;
+}
+
+.invalid-feedback {
+  display: block;
+  color: #842029;
+}
+.enquiry-form{
+  // position: relative;
+  &::after{
+    // position: absolute;
+    content: '';
+    display: block;
+    background-color: #dee2e6;
+    width: 50%;
+    height: 1px;
+    margin: 0.5rem auto;
+  }
+}
+.form-titel{
+  color: #0277bd;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+a{
+  text-decoration: none;
+  color: #000;
+  &:hover{
+  color: #0277bd;
+
+  }
+}
+.titel{
+  color: #0277bd;
+
+}
+p{
+  color: #000000;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.45em;
+
+}
+h2{
+  font-size: 27px;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 2em;
+
+}
+.google-maps{
+  font-size: 18px;
+  h2{
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 1.45em;
+  }
+}
+.C-O-office{
+  padding-top: 1rem;
+  &::after{
+    content: '';
+    width: 40%;
+    height: 1px;
+    display: block;
+    background-color: #dee2e6;
+    margin-top: 1rem;
+  }
+}
+.units-titel{
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1.45em;
+  margin: 0;
+}
+.units{
+  color: #0277bd;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.8em;
+}
+.alert{
+  padding: 0;
+  background: none;
+  border: none;
+  margin: 0;
+}
+
+@media (max-width:500px){
+  .contact{
+    height:255px;
+  }
+}
+@media (min-width:501px) and (max-width:990px){
+  .contact{
+    height:40vh;
+  }
+}
+@media (min-width:991px) and (max-width:1200px){
+  .contact{
+    height:44vh;
+  }
+}
+
+@media (min-width:1201px) and (max-width:1440px){
+  .contact{
+    height:55vh;
+  }
+}
+
+@media (min-width:1441px){
+  .contact{
+    height: 55vh;
+  }
+}
+@media (max-width:768px){
+  h2{
+    font-size: 13pt !important;
+    line-height: 1rem ;
+  }
+  .titel{
+    font-size: 12pt;
+  }
+  p{
+    font-size: 10pt;
+  }
+  .google-maps {
+   div{
+      margin-bottom: 0.5rem !important;
+    a{
+
+      font-size: 10pt;
+    }
+   }
+  }
+  .units-titel{
+    font-size: 12pt;
+  }
+  .units{
+    font-size: 11pt;
+  }
+  .form-select{
+    padding: 4px 6px;
+    font-size: 14px;
+  }
+  .form-control{
+    padding: 4px 6px;
+  }
+  ::placeholder{
+    font-size: 14px;
+  }
+  label{
+    font-size: 14px;
+  }
+}

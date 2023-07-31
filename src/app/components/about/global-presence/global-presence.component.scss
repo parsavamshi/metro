@@ -1,0 +1,233 @@
+.global-presence{
+  background-image: url(../../../../assets/images/banners/accrediations.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 460px;
+  h2{
+      color: black;
+      font-weight: normal;
+      font-size: 50px;
+      margin-top: -80px;
+      background-color: #fff;
+      text-align: center;
+      margin-top: 2rem;
+  }
+}
+
+
+h3{
+  font-size: 18pt;
+  font-weight: 600;
+margin: 1rem 0 !important;
+}
+
+tr th {
+  font-size: 18pt !important;
+}
+tr td {
+font-size: 14pt;
+}
+
+@media (max-width:500px){
+  .global-presence{
+      height: 255px;
+      h2{
+          color: black;
+          font-weight: normal;
+          font-size: 26px;
+          margin-top: -80px;
+          background-color: #fff;
+          text-align: center;
+          margin-top: 2rem;
+      }
+  }
+  tr th {
+    font-size: 11pt !important;
+  }
+  tr td {
+  font-size: 9pt;
+  }
+
+  h3{
+    font-size: 14pt;
+  }
+  .global-presence-content{
+    margin-top: 6rem;
+  }
+  p{
+    font-size: 9pt !important;
+  }
+  a{
+    font-size: 9pt;
+  }
+
+}
+
+@media (min-width:501px) and (max-width:790px){
+  .global-presence{
+      height: 40vh;
+      h2{
+          color: black;
+          font-weight: normal;
+          font-size: 32px;
+          margin-top: -80px;
+          background-color: #fff;
+          text-align: center;
+          margin-top: 2rem;
+      }
+  }
+
+  .global-presence-content{
+    margin-top: 6rem;
+  }
+  tr th {
+    font-size: 11pt !important;
+  }
+  tr td {
+  font-size: 10pt;
+  }
+
+  h3{
+    font-size: 14pt;
+  }
+  .global-presence-content{
+    margin-top: 6rem;
+  }
+  p{
+    font-size: 10pt !important;
+  }
+  a{
+    font-size: 10pt;
+  }
+
+}
+@media  (min-width:791px) and (max-width:1024px){
+  .global-presence{
+      height: 44vh;
+      h2{
+          color: black;
+          font-weight: normal;
+          font-size: 36px;
+          margin-top: -80px;
+          background-color: #fff;
+          text-align: center;
+          margin-top: 2rem;
+      }
+  }
+  h3{
+    font-size: 14pt;
+  }
+  .global-presence-content{
+    margin-top: 6rem;
+  }
+  tr th {
+    font-size: 13pt !important;
+  }
+  tr td {
+  font-size: 11pt;
+  }
+  p{
+    font-size: 11pt !important;
+  }
+  a{
+    font-size: 11pt;
+  }
+}
+
+@media (min-width:1025px) and (max-width:1200px){
+  .global-presence{
+    height: 44vh;
+
+    }
+    .col-md-5{
+        text-align: center;
+        img{
+            width: 50%;
+            height: 50%;
+        }
+    }
+    h3{
+      font-size: 15pt;
+    }
+    .global-presence-content{
+      margin-top: 6rem;
+    }
+    tr th {
+      font-size: 14pt !important;
+    }
+    tr td {
+    font-size: 12pt;
+    }
+    p{
+      font-size: 12pt !important;
+    }
+    a{
+      font-size: 12pt;
+    }
+}
+@media (min-width:1201px) and (max-width:1440px){
+  .global-presence{
+    height: 55vh;
+
+    }
+    .col-md-5{
+        text-align: center;
+        img{
+            width: 50%;
+            height: 50%;
+        }
+    }
+    h3{
+      font-size: 15pt;
+    }
+    .global-presence-content{
+      margin-top: 6rem;
+    }
+    tr th {
+      font-size: 15pt !important;
+    }
+    tr td {
+    font-size: 13pt;
+    }
+    p{
+      font-size: 13pt !important;
+    }
+    a{
+      font-size: 13pt;
+    }
+
+}
+
+@media (min-width:1441px){
+  .global-presence{
+    height: 55vh;
+
+    }
+    .col-md-5{
+        text-align: center;
+        img{
+            width: 50%;
+            height: 50%;
+        }
+    }
+    h3{
+      font-size: 16pt;
+    }
+    .global-presence-content{
+      margin-top: 6rem;
+    }
+    tr th {
+      font-size: 16pt !important;
+    }
+    tr td {
+    font-size: 14pt;
+    }
+    p{
+      font-size: 14pt !important;
+    }
+    a{
+      font-size: 14pt;
+    }
+}
+

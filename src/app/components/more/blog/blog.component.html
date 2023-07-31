@@ -1,0 +1,221 @@
+<!-- <div class="about">
+  <div class="d-table">
+    <div class="d-table-cell">
+      <div class="main-banner item-bg-one">
+        <div class="d-table">
+          <div class="d-table-cell">
+            <div class="container">
+              <div class="main-banner-text">
+                <h3>Blog</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+<div class="blog mt-5 pt-5">
+  <div class="container">
+    <div class="row g-4 my-4">
+      <div class="col-md-8 col-lg-6 vstack gap-4 ">
+        <div class="card border-end border-0 rounded-0 " *ngFor="let blog of blogs">
+          <div class="card-body">
+            <div class="row flex-column mb-3">
+              <div class="col">
+                <div class="w-100">
+                  <figure class="blog-image" routerLink="/blog/{{blog.id}}" (click)="scrollToTop()">
+                    <img
+                      src="{{blog.blogImage}}"
+                      alt=""
+                      srcset=""
+                      width="100"
+                      height="100"
+                      />
+                  </figure>
+
+                  <a href="" class="blog-heading-1 my-3 mb-1 d-block" routerLink="/blog/{{blog.id}}" (click)="scrollToTop()">
+                    <h3 class="mb-0">{{blog.blogHeading}}</h3>
+                  </a>
+
+                  <ul class="nav time-and-date">
+                    <li>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-person"
+                        viewBox="0 0 16 16">
+                        <path
+                          d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2
+                          2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6
+                          4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68
+                          10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83
+                          1.418-.832 1.664h10Z"
+                          />
+                        </svg>
+                      </li>
+                      <li>
+                        <div class="d-flex">
+                          <div class="">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-stopwatch"
+                              viewBox="0 0 16 16">
+                              <path
+                                d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0
+                                1H8a.5.5 0 0 0 .5-.5V5.6z"
+                                />
+                                <path
+                                  d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0
+                                  1v.57c1.36.196 2.594.78 3.584 1.64a.715.715 0 0
+                                  1 .012-.013l.354-.354-.354-.353a.5.5 0 0 1
+                                  .707-.708l1.414 1.415a.5.5 0 1
+                                  1-.707.707l-.353-.354-.354.354a.512.512 0 0
+                                  1-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0
+                                  1-.5-.5zM8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3z"
+                                  />
+                                </svg>
+                              </div>
+                              <div class="">
+                                <span>{{blog.postTime}}</span>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="d-flex align-items-center">
+                              <span>
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="16"
+                                  height="16"
+                                  fill="currentColor"
+                                  class="bi bi-folder"
+                                  viewBox="0 0 16 16">
+                                  <path
+                                    d="M.54 3.87.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1
+                                    1.414.586l.828.828A2 2 0 0 0 9.828 3h3.982a2 2
+                                    0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174
+                                    14H2.826a2 2 0 0 1-1.991-1.819l-.637-7a1.99
+                                    1.99 0 0 1 .342-1.31zM2.19 4a1 1 0 0 0-.996
+                                    1.09l.637 7a1 1 0 0 0 .995.91h10.348a1 1 0 0 0
+                                    .995-.91l.637-7A1 1 0 0 0 13.81
+                                    4H2.19zm4.69-1.707A1 1 0 0 0 6.172 2H2.5a1 1 0
+                                    0 0-1 .981l.006.139C1.72 3.042 1.95 3 2.19
+                                    3h5.396l-.707-.707z"
+                                    />
+                                  </svg>
+                                </span>
+                                <!-- routerLink="/active-pharmaceutical-ingredient" -->
+                                <div class="">
+                                  <a routerLink="/blog/product/{{blog.id}}" (click)="scrollToTop()">{{blog.ActivedPharmaceutical}}</a>
+                                  <span>{{blog.spanDash1}}</span>
+                                </div>
+                                <div class="">
+                                  <a href="" routerLink="/blog/product/{{blog.id}}" (click)="scrollToTop()">{{blog.Intermediates}}</a><span>{{blog.spanDash2}}</span>
+                                </div>
+                                <div class=""><a href="" routerLink="/blog/product/{{blog.id}}" (click)="scrollToTop()">{{blog.Pellets}}</a></div>
+                                <div class=""><a href="" routerLink="/blog/product/{{blog.id}}" (click)="scrollToTop()">{{blog.covid}}</a></div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col my-3 mb-0">
+                        <div class="parent">
+                          <p class="blog-content" style="width: 100%">
+                            {{blog.blogText1}}
+                          </p>
+                        </div>
+                        <div class="py-5 border-bottom">
+                          <button class="continue-reading border-1 rounded-0 py-2
+                            px-4" routerLink="/blog/{{blog.id}}" (click)="scrollToTop()">
+                            CONTINUE READING
+                            <span><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                style="fill: rgba(0, 0, 0, 1)">
+                                <path
+                                  d="M10.707 17.707 16.414 12l-5.707-5.707-1.414
+                                  1.414L13.586 12l-4.293 4.293z"></path>
+                              </svg>
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="row g-4">
+                  <div class="col-sm-6 col-lg-12">
+                    <div class="card border-0 text-center">
+                      <div class="MD-logo">
+                        <img
+                          src="../../../assets/images/blog/nvrao.png"
+                          alt=""
+                          width="auto"
+                          />
+                      </div>
+                      <div class="row fw-bold">
+                        <strong class="heading">Dr. N.V. Rao</strong>
+                        <strong class="heading-2">PhD in Organic Chemistry</strong>
+                        <strong class="heading-2">MD Metrochem API Pvt Ltd</strong>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-12">
+                    <div class="card border-0">
+                      <div class="card-body">
+                        <div class="about-us my-4">
+                          <h6 class="card-title ">ABOUT US</h6>
+                          <ul class="nav flex-column" >
+                            <li class="nav-link p-1 card-area" (click)="scrollToTop()" routerLink="/our-story" >Our Story</li>
+                            <li class="nav-link p-1 card-area" (click)="scrollToTop()" routerLink="/our-leadership">Our Leadership</li>
+                            <li class="nav-link p-1 card-area" (click)="scrollToTop()" routerLink="/our-philosophy">Our Philosophy</li>
+                            <li class="nav-link p-1 card-area" (click)="scrollToTop()" routerLink="/our-milestones">Our Milestones</li>
+                            <li class="nav-link p-1 card-area" (click)="scrollToTop()" routerLink="/accreditations">Accreditationss</li>
+                            <li class="nav-link p-1 card-area" (click)="scrollToTop()" routerLink="/global-presence">Global Presence</li>
+                          </ul>
+                        </div>
+                        <div class="blog-categories my-4">
+                          <h6 class="card-title ">BLOG CATEGORIES</h6>
+                          <ul class="list-group list-group-flush" >
+                            <li class="list-group-item card-area" (click)="scrollToTop()" routerLink="/blog/product/covid-19-updates">COVID-19 Updates</li>
+                            <li class="list-group-item card-area" (click)="scrollToTop()" routerLink="/blog/product/strategies-to-reduce-costs-and-improve-the-efficiency-of-pharmaceutical-rd">Intermediates</li>
+                            <li class="list-group-item card-area" (click)="scrollToTop()" routerLink="/blog/product/strategies-to-reduce-costs-and-improve-the-efficiency-of-pharmaceutical-rd">Pellets</li>
+                            <li class="list-group-item card-area" (click)="scrollToTop()" routerLink="/blog/product/strategies-to-reduce-costs-and-improve-the-efficiency-of-pharmaceutical-rd">Active Pharmaceutical Ingredient</li>
+                            <li class="list-group-item card-area" (click)="scrollToTop()" routerLink="">CPhI Events</li>
+                          </ul>
+                        </div>
+                        <div class="recent-post my-4">
+                          <h6 class="card-title ">RECENT POSTS</h6>
+                          <ul class="list-group list-group-flush" >
+                            <li class="list-group-item card-area" (click)="scrollToTop()" routerLink="/blog/strategies-to-reduce-costs-and-improve-the-efficiency-of-pharmaceutical-rd">Strategies to Reduce Costs and Improve the Efficiency of Pharmaceutical R&D</li>
+                            <li class="list-group-item card-area" (click)="scrollToTop()" routerLink="/blog/active-pharmaceutical-manufacturing-in-india">Active Pharmaceutical Manufacturing In India</li>
+                            <li class="list-group-item card-area" (click)="scrollToTop()" routerLink="/blog/covid-19-updates">How to stay Sane during Lockdown (COVID-19)</li>
+                          </ul>
+                        </div>
+                        <div class="research-development my-4">
+                          <h6 class="card-title ">RESEARCH & DEVELOPMENT</h6>
+                          <nav class="nav flex-column" >
+                            <span class="nav-link p-1 card-area" (click)="scrollToTop()" routerLink="/our-R&D">Research & Development</span>
+                            <span class="nav-link p-1 card-area" (click)="scrollToTop()"c routerLink="/our-expertise">Our Expertise</span>
+                            <span class="nav-link p-1 card-area" (click)="scrollToTop()" routerLink="/our-infrastructure">Our Infrastructure</span>
+                          </nav>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+</div>

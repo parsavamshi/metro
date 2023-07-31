@@ -1,0 +1,269 @@
+img{
+  width:100%;
+  height: 100%;
+
+}
+.MD-logo{
+  img{
+    width:auto;
+  }
+}
+.list2{
+  img{
+    border: none !important;
+  }
+}
+.blog-heading-1{
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  text-decoration: none;
+  h3{
+    font-size: 34px;
+    padding: 0 0 20px;
+    margin: 0 0 15px;
+    border-bottom: 1px solid #f1f1f1;
+    letter-spacing: 0.6px;
+  }
+}
+.time-and-date{
+  align-items: center;
+
+  li{
+    font-size: 11px;
+    color: #777;
+    margin: 0.5rem;
+    span{
+      margin: 0.3rem 0.8rem;
+    }
+    div{
+      a{
+        color: #777;
+        text-decoration: none;
+        // margin: 0 .3rem;
+        &:hover{
+          color: #13aff0;
+        }
+      }
+      span{
+        margin: 0 0.5rem;
+
+      }
+    }
+  }
+}
+.socail-sharing{
+
+  h5{
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 14pt !important;
+  }
+  ul{
+    li{
+    border: 2px solid transparent;
+    padding: 0 0.5rem 0 0;
+    a{
+      text-decoration: none;
+    }
+      &:hover{
+        .bx{
+          webkit-animation: tada 1.5s ease infinite;
+         animation: tada 1.5s ease infinite;
+        }
+      }
+      .bx{
+        margin: 0rem 1rem 0 0;
+        color: #fff;
+        padding: 0.6rem;
+    font-size: 21px;
+      }
+      .bxl-facebook{
+        background: #3a579a;
+      }
+      .bxl-twitter{
+        background: #00abf0;
+      }
+      .bxl-linkedin{
+        background: #0077b5;
+      }
+      .bx-envelope{
+        background: #27ae60;
+      }
+      .bx-printer{
+        background: #bdc3c7;
+      }
+      .bxl-pinterest-alt{
+        background: #c92228;
+      }
+      // span{
+      //   // margin:0rem ;
+      // }
+    }
+  }
+}
+.facebook{
+  &:hover{
+    border-color: rgb(51 77 135 / 40%) !important;
+  }
+}
+.twitter{
+  &:hover{
+    border-color: rgb(0 153 215 / 40%)!important;
+  }
+}
+.linkedin{
+  &:hover{
+    border-color: rgb(0 102 156 / 40%) !important;
+  }
+}
+.envelope{
+  &:hover{
+    border-color: rgb(35 158 87 / 40%)!important;
+  }
+}
+.printer{
+  &:hover{
+    border-color: rgb(175 182 187 / 40%) !important;
+
+  }
+}
+.pinterest{
+  &:hover{
+    border-color: rgb(179 30 36 / 40%) !important;
+  }
+}
+
+p{
+  font-size: 14pt !important;
+  color: black !important;
+  text-align: justify;
+}
+.nextPost{
+  width: 264px;
+  height: 148px;
+}
+
+.card-title{
+  font-size: 13px;
+  font-weight: 700;
+    letter-spacing: 1px;
+    margin: 0 0 20px;
+    line-height: 1;
+    align-items: center;
+    i{
+color: #13aff0;
+font-size: 18px;
+    }
+}
+.related-post-titel{
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin: 12px 12px 3px 12px;
+}
+.related-post{
+  width: 300px;
+  text-align: center;
+  p{
+    text-align: center;
+  }
+}
+.related-post-time{
+  color: #777;
+  font-size: 12px;
+  vertical-align: middle;
+  i{
+    font-size: 14px;
+  }
+}
+.previousPost{
+  // color: #;
+  a{
+    text-decoration: none;
+    .previousPost-titel{
+      color: #13aff0;
+      line-height: 20px;
+      i{
+        margin-right: 1rem;
+      }
+    }
+    .previousPost-content{
+      font-size: 18px;
+      color: #000;
+      margin-top: 5px;
+    }
+  }
+
+}
+.card-title{
+  font-size: 13px;
+  font-weight: 700;
+  border-width: 0 0 0 3px;
+    border-style: solid;
+    border-color: #13aff0;
+    letter-spacing: 1px;
+    padding-left: 15px;
+    margin: 0 0 20px;
+    text-transform: uppercase;
+    display: block;
+    line-height: 1;
+}
+.card-area{
+  font-size: 13px;
+  padding-left: 0 !important;
+  color: #777;
+  &:hover{
+    color: #13aff0;
+
+  }
+}
+
+.list1{
+ li{
+  list-style: disc !important;
+ }
+}
+.heading{
+  font-weight: 600;
+  font-size: 21px;
+}
+.heading-2{
+  font-weight: 600;
+  font-size: 15px;
+}
+
+@media (max-width:500px){
+  .blog-heading-1{
+    h3{
+    font-size: 12pt !important;
+
+    }
+  }
+  .socail-sharing{
+    ul{
+
+      li{
+        a{
+          text-decoration: none;
+          span{
+            font-size: 9pt;
+          }
+        }
+        .bx{
+          margin: 0.1rem;
+          padding: 0.2rem ;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  p{
+    font-size: 12pt !important;
+  }
+  ul{
+    padding: 0 !important;
+  }
+  .card-body{
+    padding: 0 !important;
+  }
+}

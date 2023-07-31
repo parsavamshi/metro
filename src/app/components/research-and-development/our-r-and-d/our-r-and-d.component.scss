@@ -1,0 +1,277 @@
+.our-r-and-d{
+  background-image: url(../../../../assets/images/banners/accrediations.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 460px;
+  h2{
+      color: black;
+      font-weight: normal;
+      font-size: 50px;
+      margin-top: -80px;
+      background-color: #fff;
+      text-align: center;
+      margin-top: 2rem;
+  }
+}
+h1{
+  text-align: start;
+  margin: 0rem  0 3rem ;
+  color: #EB7A24;
+  &::after{
+      content: '';
+      width: 36%;
+      height: 2px;
+      background-color: #EB7A24;
+      margin-top: 10px;
+      display: block;
+  }
+}
+img{
+  border-radius: 20px;
+}
+h4{
+ span{
+  font-size: 16px;
+ }
+}
+
+h3{
+  font-size: 18pt;
+  font-weight: 600;
+margin: 1rem 0 !important;
+}
+p{
+  font-size: 16pt !important;
+    color: black !important;
+    margin-bottom: 2rem;
+}
+ul{
+  padding-left: 1.5rem !important;
+  list-style:square !important;
+  li{
+  list-style:disc !important;
+    font-size: 16pt;
+  }
+}
+.div-1{
+  margin-bottom: 2rem;
+}
+
+@media (max-width:500px){
+  .our-r-and-d{
+      height: 255px;
+      h2{
+          color: black;
+          font-weight: normal;
+          font-size: 26px;
+          margin-top: -80px;
+          background-color: #fff;
+          text-align: center;
+          margin-top: 2rem;
+      }
+  }
+  .our-r-and-d-content{
+      margin: 4rem 0 1rem 0 !important;
+      padding: 1rem 0 !important;
+  }
+  h1{
+      text-align: center;
+  }
+  .row{
+      flex-direction: column-reverse;
+  }
+  h3{
+    font-size: 14pt;
+  }
+  p{
+    font-size: 9pt !important;
+    margin-bottom: 1rem;
+  }
+  ul {
+    li{
+      font-size: 9pt;
+    }
+  }
+  .m-5{
+    margin: 1rem !important;
+  }
+
+}
+
+@media (min-width:501px) and (max-width:790px){
+  .our-r-and-d{
+      height: 40vh;
+      h2{
+          color: black;
+          font-weight: normal;
+          font-size: 32px;
+          margin-top: -80px;
+          background-color: #fff;
+          text-align: center;
+          margin-top: 2rem;
+      }
+  }
+  .our-r-and-d-content{
+    margin: 4rem 0 1rem 0 !important;
+    padding: 1rem 0 !important;
+}
+h1{
+    text-align: center;
+}
+.row{
+    flex-direction: column-reverse;
+}
+h3{
+  font-size: 15pt;
+}
+p{
+  font-size: 10pt !important;
+  margin-bottom: 1.5rem;
+}
+ul {
+  li{
+    font-size: 10pt;
+  }
+}
+.m-5{
+  margin: 2rem !important;
+}
+}
+@media  (min-width:791px) and (max-width:1024px){
+  .our-r-and-d{
+      height: 44vh;
+      h2{
+          color: black;
+          font-weight: normal;
+          font-size: 36px;
+          margin-top: -80px;
+          background-color: #fff;
+          text-align: center;
+          margin-top: 2rem;
+      }
+  }
+  .our-r-and-d-content{
+    margin: 2rem 0 1rem 0 !important;
+    padding: 1rem 0 !important;
+}
+h1{
+    text-align: center;
+}
+.row{
+    flex-direction: column-reverse;
+}
+h3{
+  font-size: 16pt;
+}
+p{
+  font-size: 11pt !important;
+  margin-bottom: 1.5rem;
+}
+ul {
+  li{
+    font-size: 11pt;
+  }
+}
+.m-5{
+  margin: 2rem !important;
+}
+}
+
+@media (min-width:1025px) and (max-width:1200px){
+  .our-r-and-d{
+    height: 44vh;}
+  .col-md-5{
+      text-align: center;
+      img{
+          width: 50%;
+          height: 50%;
+      }
+  }
+  .our-r-and-d-content{
+    margin: 2rem 0 1rem 0 !important;
+    padding: 1rem 0 !important;
+}
+h1{
+    text-align: center;
+}
+.row{
+    flex-direction: column-reverse;
+}
+h3{
+  font-size: 16pt;
+}
+p{
+  font-size: 11pt !important;
+  margin-bottom: 1.5rem;
+}
+ul {
+  li{
+    font-size: 11pt;
+  }
+}
+.m-5{
+  margin: 2rem !important;
+}
+}
+@media (min-width:1201px) and (max-width:1440px){
+  .our-r-and-d{
+    height: 55vh;}
+    .our-r-and-d-content{
+      margin: 2rem 0 1rem 0 !important;
+      padding: 1rem 0 !important;
+  }
+  h1{
+      text-align: center;
+  }
+  .row{
+      flex-direction: column-reverse;
+  }
+  h3{
+    font-size: 16pt;
+  }
+  p{
+    font-size: 13pt !important;
+    margin-bottom: 1.5rem;
+  }
+  ul {
+    li{
+      font-size: 13pt;
+    }
+  }
+  .m-5{
+    margin: 2rem !important;
+  }
+}
+
+@media (min-width:1441px){
+
+  .our-r-and-d{
+    height: 55vh;
+  }
+    .our-r-and-d-content{
+      margin: 4rem 0 1rem 0 !important;
+      padding: 1rem 0 !important;
+  }
+  h1{
+      text-align: center;
+  }
+  .row{
+      flex-direction: column-reverse;
+  }
+  h3{
+    font-size: 16pt;
+  }
+  p{
+    font-size: 14pt !important;
+    margin-bottom: 1.5rem;
+  }
+  ul {
+    li{
+      font-size: 14pt;
+    }
+  }
+  .m-5{
+    margin: 1rem  0!important;
+  }
+}

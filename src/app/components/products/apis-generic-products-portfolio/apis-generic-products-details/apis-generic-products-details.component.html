@@ -1,0 +1,183 @@
+<div class="products">
+  <div class="container">
+    <div class="text-left my-3">
+      <h3>{{ product.name }}</h3>
+    </div>
+    <div class="text-center my-5">
+      <img src="{{ product.image }}" alt="{{productId}}" title="{{productId}}" />
+    </div>
+
+    <div class="my-3">
+      <h5 class="my-3">Product Description:</h5>
+      <ul>
+        <li>Therapeutic: {{ product.productDescription.Therapeutic }}</li>
+        <li>CAS Number: {{ product.productDescription.CASNumber }}</li>
+        <li class="formula">
+          Molecular Formula:
+          <span>
+            {{product.productDescription.MolecularFormula.letter1}}
+            <sub>{{product.productDescription.MolecularFormula.number1}}</sub>
+            {{product.productDescription.MolecularFormula.letter2}}
+            <sub>{{product.productDescription.MolecularFormula.number2}}</sub>
+            {{product.productDescription.MolecularFormula.letter3}}
+            <sub>{{product.productDescription.MolecularFormula.number3}}</sub>
+            {{ product.productDescription.MolecularFormula.letter4}}
+            <sub>{{product.productDescription.MolecularFormula.number4}}</sub>
+            {{product.productDescription.MolecularFormula.letter5 }}
+            <sub>{{product.productDescription.MolecularFormula.number5 }}</sub>
+            {{product.productDescription.MolecularFormula.letter6 }}
+            <sup>{{product.productDescription.MolecularFormula.number6}}</sup>
+            <sub>{{product.productDescription.MolecularFormula.number62 }}</sub>
+
+            {{product.productDescription.MolecularFormula.letter7}}
+            <sub>{{product.productDescription.MolecularFormula.number7}}</sub>
+          </span>
+        </li>
+        <li>
+          Molecular Weight: {{ product.productDescription.MolecularWeight }}
+        </li>
+        <li>Mesh Size: {{ product.productDescription.MeshSize }}</li>
+        <li>Form: {{ product.productDescription.Form }}</li>
+        <li>
+          Metrochem Development Status :
+          {{ product.productDescription.MetrochemDevelopmentStatus }}
+        </li>
+      </ul>
+      <p class="mt-5"><b>{{ product.productDescription.companyName4 }}</b> {{product.productDescription.text1}} <b>{{product.productDescription.manufacturers}}</b> {{ product.productDescription.extra }}</p>
+      <p>{{product.productDescription.extra2}}</p>
+
+    </div>
+    <div class="my-5">
+      <h5 class="my-3"><b>{{product.MechanismTitel}}</b></h5>
+      <p>
+        <strong>{{ product.productName1 }}</strong
+        > {{ product.MechanismOfAction }}
+      </p>
+      <p>
+        <strong>{{ product.productName4 }}</strong
+        > {{ product.MechanismOfAction4 }}
+      </p>
+      <p>
+        {{ product.MechanismOfActiontext }}
+        <strong>{{ product.productName5 }}</strong
+        > {{ product.MechanismOfAction5 }}
+      </p>
+      <p>
+        {{ product.MechanismOfAction1 }}
+      </p>
+      <p>{{product.MechanismOfAction2}}</p>
+      <!-- <p>{{product.MechanismOfAction3}}</p> -->
+    </div>
+    <div class="my-5">
+      <h5 class="my-3">Indication:</h5>
+        <p><b>{{product.productName1}}</b> {{product.indicationTitel}}</p>
+        <p><b>{{product.productName2}}</b> {{product.indicationTitel1}}</p>
+        <p>{{product.indication4Titel}}</p>
+        <p>{{product.indication4Sub}}</p>
+
+      <ul >
+        <li *ngFor="let x of product.Indication">{{ x.point1 }}</li>
+      </ul>
+
+      <ul >
+        <li *ngFor="let x of product.Indication2"><b>{{ x.point2 }}</b>
+          <ul class="unstyle p-0">
+            <li><p>{{x.text1}}</p></li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul class="unstyle " >
+        <li *ngFor="let point3 of product.Indication3">{{point3.point3}}</li>
+      </ul>
+
+      <ul class="" >
+        <li *ngFor="let point4 of product.Indication4">{{point4.point4}}</li>
+      </ul>
+
+  <ul class="unstyle" >
+        <li *ngFor="let point5 of product.Indication5"><b>{{product.productName1}}</b>{{point5.point1}}</li>
+      </ul>
+
+      <ul class="unstyle" >
+        <li *ngFor="let point5 of product.Indication6"><b>{{product.productName3}}</b>{{point5.point1}}</li>
+      </ul>
+      <ul class="unstyle" >
+        <li *ngFor="let point5 of product.Indication7"><b>{{product.productName5}}</b>{{point5.point1}}</li>
+      </ul>
+
+      <ul  class="p-0">
+        <li style="list-style:none" *ngFor="let x of product.Indication8">
+          <p>{{x.text1}}</p>
+          <ul class=" p-0">
+            <li>{{ x.point1 }}</li>
+
+          </ul>
+        </li>
+      </ul>
+      <ul class="unstyle" >
+        <li *ngFor="let point5 of product.Indication9"><b>{{product.productName6}}</b>{{point5.point2}}</li>
+      </ul>
+
+    </div>
+    <div class="my-5">
+
+      <h5 class="my-3">Metrochem API Expertise:</h5>
+      <p>
+        <strong>Metrochem API Pvt Ltd</strong> is a leading manufacturer and
+        supplier of
+        <strong>Active Pharmaceutical Ingredients (APIs)</strong> through our
+        manufacturing sites in Hyderabad and Vizag. Our API facilities have been
+        inspected and approved by several global regulatory bodies including the
+        US FDA, Japan PMDA, KFDA, and meet the cGMP compliance standards.
+        Adapting quickly to the ever-evolving demands, we have emerged as one of
+        the fastest growing organization in the pharmaceutical industry across
+        the India. To cater our customer high volume requirements, we have
+        dedicated each of our 6 manufacturing facilities to our 3 core product
+        groups – APIs, Pelletization& Intermediates – reinforced by a well
+        equipped, centralized Research & Development laboratory.
+      </p>
+      <p>
+        We have been successfully supplying APIs all over the globe for more
+        than 15 years. Total reactor volume exceeds
+        <strong>1200 KL </strong> which includes pilot and multi-purpose units.
+        We are capable of executing extensive API requirements for our
+        customers. Metrochem API Pvt Ltd has an experienced team of highly
+        skilled chemists, experienced regulatory professionals and supply chain
+        experts, who are ready to handle your API manufacturing requirements
+        with expert care. We also offer Contract Manufacturing, Contract
+        Research, and Custom Synthesis services. We have a stand-alone R&D
+        center located in Hyderabad with State-of-the-art analytical facilities
+        and over 90 scientists.We have extensively worked on and delivered new
+        products across a wide variety of therapeutic segments and as a company,
+        we have built strong expertise in new product development.
+      </p>
+    </div>
+    <div class="my-3">
+      <span
+        >Disclaimer : Metrochem API Pvt Ltd respects the intellectual property
+        rights of others. Some of the Active Pharmaceuticals Ingredients (APIs)
+        listed in the Metrochem’s product list or brochure or in the product
+        list uploaded in Metrochem’s website may be protected by a valid patent
+        in India or in any other countries concerned. However, mentioning of the
+        name of such product(s) in the product brochure or the product list
+        shall not be construed as infringement in any manner whatsoever. Without
+        prejudice to the foregoing, Metrochem’s supply of API being protected by
+        a valid product patent, if any, is intended solely for uses reasonably
+        relating to the development and submission of information required under
+        any law for the time being inforce, in India, or in a country other than
+        India that regulates the manufacture, use, sale or import of the said
+        product, strictly under the conditions as set forth in Section 107A of
+        the Indian patents Act, 1970, as amended in 2005, or an equivalent
+        provision (Bolar exemption) thereof in a country other than India. The
+        disclaimer is applicable till the expiration of the corresponding
+        product patent(s), if any, in the respective. countries concerned. None
+        of the products will be supplied to the countries wherein this could be
+        in conflict with existing laws. However, the final responsibility lies
+        exclusively with the buyer/ultimate customer.</span
+      >
+    </div>
+  </div>
+</div>
+
+

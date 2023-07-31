@@ -1,0 +1,243 @@
+<!-- <div class="about-nav">
+  <div class="container">
+    <nav class="nav nav-pills nav-justified">
+      <li class="nav-item">
+        <a
+          class="nav-link "
+          rel="ugc"
+          routerLink="/our-story"
+          routerLinkActive="active"
+          (click)="scrollToTop()"
+          > Our Story</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          rel="ugc"
+          routerLink="/our-leadership"
+          routerLinkActive="active"
+          (click)="scrollToTop()"
+          >Our Leadership</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          rel="ugc"
+          routerLink="/our-philosophy"
+          routerLinkActive="active"
+          (click)="scrollToTop()"
+          >Our Philosophy</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          rel="ugc"
+          routerLink="/our-milestones"
+          routerLinkActive="active"
+          (click)="scrollToTop()"
+          >Our Milestones</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          rel="ugc"
+          routerLink="/accreditations"
+          routerLinkActive="active"
+          (click)="scrollToTop()"
+          >Accreditations</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          rel="ugc"
+          routerLink="/global-presence"
+          routerLinkActive="active"
+          (click)="scrollToTop()"
+          >Global Presence</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          rel="ugc"
+          routerLink="/our-facilities"
+          routerLinkActive="active"
+          (click)="scrollToTop()"
+          >Our Facilities</a
+        >
+      </li>
+    </nav>
+  </div>
+</div> -->
+
+
+
+<a class="close-navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarSupportedContent"
+  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+  (click)="closeNavbar()"></a>
+
+<nav class="navbar navbar-expand-lg navbar-light flex-wrap align-items-center justify-content-center justify-content-md-between" [class.active]="classApplied" ngStickyNav
+  stickyClass="sticky-box-shadow" ngStickyNav [ngClass]="statusClass" >
+  <div class="container">
+
+    <button class="navbar-toggler" type="button" (click)="toggleClass()">
+      <span class="burger-menu">
+        <span class="top-bar"></span>
+        <span class="middle-bar"></span>
+        <span class="bottom-bar"></span>
+      </span>
+    </button>
+    <div class="collapse navbar-collapse col-12 col-md-auto mb-2 justify-content-center mb-md-0" id="navbarSupportedContent">
+      <ul class="navbar-nav  align-items-center">
+        <li class="nav-item">
+          <a
+            class="nav-link "
+            rel="ugc"
+            routerLink="/our-story"
+            routerLinkActive="active"
+            (click)="scrollToTop()"
+            > Our Story</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            rel="ugc"
+            routerLink="/our-leadership"
+            routerLinkActive="active"
+            (click)="scrollToTop()"
+            >Our Leadership</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            rel="ugc"
+            routerLink="/our-philosophy"
+            routerLinkActive="active"
+            (click)="scrollToTop()"
+            >Our Philosophy</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            rel="ugc"
+            routerLink="/our-milestones"
+            routerLinkActive="active"
+            (click)="scrollToTop()"
+            >Our Milestones</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            rel="ugc"
+            routerLink="/accreditations"
+            routerLinkActive="active"
+            (click)="scrollToTop()"
+            >Accreditations</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            rel="ugc"
+            routerLink="/global-presence"
+            routerLinkActive="active"
+            (click)="scrollToTop()"
+            >Global Presence</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            rel="ugc"
+            routerLink="/our-facilities"
+            routerLinkActive="active"
+            (click)="scrollToTop()"
+            >Our Facilities</a
+          >
+        </li>
+      </ul>
+
+      <ul class="navbar-nav ml-auto for-responsive">
+        <li class="nav-item">
+          <a
+            class="nav-link "
+            rel="ugc"
+            routerLink="/our-story"
+            routerLinkActive="active"
+            (click)="scrollToTop()"
+            > Our Story</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            rel="ugc"
+            routerLink="/our-leadership"
+            routerLinkActive="active"
+            (click)="scrollToTop()"
+            >Our Leadership</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            rel="ugc"
+            routerLink="/our-philosophy"
+            routerLinkActive="active"
+            (click)="scrollToTop()"
+            >Our Philosophy</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            rel="ugc"
+            routerLink="/our-milestones"
+            routerLinkActive="active"
+            (click)="scrollToTop()"
+            >Our Milestones</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            rel="ugc"
+            routerLink="/accreditations"
+            routerLinkActive="active"
+            (click)="scrollToTop()"
+            >Accreditations</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            rel="ugc"
+            routerLink="/global-presence"
+            routerLinkActive="active"
+            (click)="scrollToTop()"
+            >Global Presence</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            rel="ugc"
+            routerLink="/our-facilities"
+            routerLinkActive="active"
+            (click)="scrollToTop()"
+            >Our Facilities</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
